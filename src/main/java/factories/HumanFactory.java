@@ -5,10 +5,7 @@ import combatants.humans.General;
 import combatants.humans.Melee;
 import combatants.humans.Ranged;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class HumanFactory {
@@ -65,8 +62,9 @@ public class HumanFactory {
     // function that takes a text file of human names
     // and picks one at random to be assigned to the human
     private static String setCombatantName() {
-        File file = new File("resources/SoldierNames");
-        try (FileReader fr = new FileReader(file); BufferedReader br = new BufferedReader(fr)) {
+
+        InputStream inputStream = ClassLoader.getSystemResourceAsStream("SoldierNames");
+        try (InputStreamReader reader = new InputStreamReader(inputStream); BufferedReader br = new BufferedReader(reader)) {
             StringBuffer sb = new StringBuffer();
             String line;
             while ((line = br.readLine()) != null) {

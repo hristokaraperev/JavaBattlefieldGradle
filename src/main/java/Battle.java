@@ -3,6 +3,7 @@ import composite.Army;
 import composite.Coalition;
 import visitor.BattleLine;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Battle implements Runnable {
@@ -30,13 +31,13 @@ public class Battle implements Runnable {
                 soldierHealth = Integer.parseInt(input.nextLine());
                 System.out.print("How much health should the general have: ");
                 generalHealth = Integer.parseInt(input.nextLine());
+                System.out.println();
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input, try again!");
                 System.out.println();
             }
         }
 
-        input.close();
 
         Coalition good = new Coalition(armies, brigades, humans, soldierHealth, generalHealth, "GOOD");
         Coalition bad = new Coalition(armies, brigades, humans, soldierHealth, generalHealth, "EVIL");
@@ -54,6 +55,8 @@ public class Battle implements Runnable {
             battle(bad, good, battleLine);
         }
 
+        input.nextLine();
+        input.close();
     }
 
     private void battle(Coalition attacker, Coalition defender, BattleLine battleLine) {
