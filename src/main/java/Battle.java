@@ -11,13 +11,15 @@ public class Battle implements Runnable {
     // initialisation of game loop
     @Override
     public void run() {
+        Scanner input = new Scanner(System.in);
+
         int armies = 0;
         int brigades = 0;
         int humans = 0;
         int soldierHealth = 0;
         int generalHealth = 0;
 
-        Scanner input = new Scanner(System.in);
+
 
         while (armies == 0 || brigades == 0 || humans == 0 || soldierHealth == 0 || generalHealth == 0){
             try {
@@ -56,7 +58,7 @@ public class Battle implements Runnable {
         }
 
         input.nextLine();
-        input.close();
+
     }
 
     private void battle(Coalition attacker, Coalition defender, BattleLine battleLine) {
@@ -74,6 +76,7 @@ public class Battle implements Runnable {
             System.out.println(defender);
             System.out.println("LOSER");
             if (attacker.getArmies().size() == 0) {
+                System.out.println(attacker);
                 System.out.println("ARMY WAS DESTROYED");
             } else {
                 System.out.println(attacker);
@@ -83,6 +86,7 @@ public class Battle implements Runnable {
             System.out.println(attacker);
             System.out.println("LOSER");
             if (defender.getArmies().size() == 0) {
+                System.out.println(defender);
                 System.out.println("ARMY WAS DESTROYED");
             } else {
                 System.out.println(defender);
@@ -91,6 +95,10 @@ public class Battle implements Runnable {
 
         System.out.println();
         System.out.println("FINISH");
+        System.out.println();
+
+
+
 
     }
 }

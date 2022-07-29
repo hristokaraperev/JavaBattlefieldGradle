@@ -16,6 +16,8 @@ public class WeaponFactory {
     public final Map<String, Integer> weaponDurabilityValues = new HashMap<>();
 
     public WeaponFactory() {
+        int multiplier = 0;
+
         weaponDamageValues.put("Knife", 15);
         weaponDamageValues.put("Baton", 10);
         weaponDamageValues.put("Axe", 25);
@@ -26,15 +28,15 @@ public class WeaponFactory {
         weaponDamageValues.put("LAND", 50);
         weaponDamageValues.put("AIR", 50);
 
-        weaponDurabilityValues.put("Knife", 15);
-        weaponDurabilityValues.put("Baton", 20);
-        weaponDurabilityValues.put("Axe", 10);
-        weaponDurabilityValues.put("Rifle", 20);
-        weaponDurabilityValues.put("Handgun", 15);
-        weaponDurabilityValues.put("Flamethrower", 15);
-        weaponDurabilityValues.put("Sniper", 20);
-        weaponDurabilityValues.put("LAND", 10);
-        weaponDurabilityValues.put("AIR", 10);
+        weaponDurabilityValues.put("Knife", 15 * multiplier);
+        weaponDurabilityValues.put("Baton", 20 * multiplier);
+        weaponDurabilityValues.put("Axe", 10 * multiplier);
+        weaponDurabilityValues.put("Rifle", 20 * multiplier);
+        weaponDurabilityValues.put("Handgun", 15 * multiplier);
+        weaponDurabilityValues.put("Flamethrower", 15 * multiplier);
+        weaponDurabilityValues.put("Sniper", 20 * multiplier);
+        weaponDurabilityValues.put("LAND", 10 * multiplier);
+        weaponDurabilityValues.put("AIR", 10 * multiplier);
     }
 
 
