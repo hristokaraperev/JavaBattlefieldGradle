@@ -1,10 +1,17 @@
 package weapons;
 
-import weapons.abstractions.Weapon;
+public class MeleeWeapon extends Weapon{
+    protected MeleeWeapon(String name, double damage, int durability) {
+        super(name, damage, durability);
+    }
 
-public class MeleeWeapon extends Weapon {
     @Override
     public String toString() {
-        return this.getName();
+        final StringBuffer sb = new StringBuffer("MeleeWeapon{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", damage=").append(damage);
+        sb.append(", durability=").append(durability);
+        sb.append('}');
+        return sb.toString();
     }
 }

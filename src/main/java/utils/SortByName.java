@@ -1,11 +1,9 @@
 package utils;
 
-import combatants.abstractions.Combatant;
-import combatants.abstractions.Human;
-import combatants.abstractions.Machine;
-import composite.Army;
-import composite.Brigade;
-import composite.abstractions.Unit;
+import combatants.humans.Human;
+import combatants.machines.Machine;
+import units.Army;
+import units.Brigade;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -13,18 +11,19 @@ import java.util.List;
 
 public class SortByName implements Util{
     @Override
-    public void sort(Army army) {
-        List<Combatant> humans =  new ArrayList<>();
+    public void use(Army army) {
+        List<Human> humans = new ArrayList<>();
         List<Machine> machines = new ArrayList<>();
-        for (Unit brigade : army.getBrigades()) {
-            humans.addAll(((Brigade)brigade).getHumans());
-            machines.add(((Brigade)brigade).getWarMachine());
+
+        for (Brigade brigade : army.getSubunits()) {
+            humans.addAll(brigade.getSubunits());
+            machines.add(brigade.getMachine());
         }
 
-        humans.sort((Comparator.comparing(human -> ((Human) human).getName())));
-        machines.sort((Comparator.comparing(Machine::getName)));
+        humans.sort(Comparator.comparing(Human::getName));
+        machines.sort(Comparator.comparing(o -> o.getClass().getSimpleName()));
 
-        for (Combatant human : humans) {
+        for (Human human : humans) {
             System.out.println(human);
         }
         System.out.println();

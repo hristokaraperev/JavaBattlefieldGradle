@@ -1,25 +1,17 @@
 package utils;
 
-import combatants.abstractions.Combatant;
-import combatants.abstractions.Human;
-import composite.Army;
-import composite.Brigade;
-import composite.abstractions.Unit;
-
-import java.util.ArrayList;
-import java.util.List;
+import combatants.humans.WeaponCarrier;
+import units.Army;
+import units.Brigade;
 
 public class OverallArmyDurability implements Util{
     @Override
-    public void sort(Army army) {
+    public void use(Army army) {
         int overallDurability = 0;
-        List<Combatant> humans = new ArrayList<>();
-        for (Unit brigade : army.getBrigades()) {
-            humans.addAll(((Brigade)brigade).getHumans());
-            overallDurability += ((Brigade)brigade).getWarMachine().getDurability();
+        for (Brigade brigade : army.getSubunits()) {
+            overallDurability += brigade.getMachine().getDurability();
+            overallDurability += brigade.getSubunits().stream().mapToInt(value -> ((WeaponCarrier)value).getWeapon().getDurability()).sum();
         }
-        overallDurability += humans.stream().mapToInt(value -> ((Human)value).getWeapon().getDurability()).sum();
-
         System.out.println("Overall army durability: " + overallDurability);
     }
 }

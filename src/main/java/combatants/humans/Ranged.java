@@ -1,23 +1,33 @@
 package combatants.humans;
 
-import combatants.abstractions.Combatant;
-import combatants.abstractions.Human;
-import combatants.abstractions.Machine;
+import weapons.Weapon;
 
-public class Ranged extends Human {
-
-    // function is called every time a combatant is about to be attacked
-    @Override
-    public void isFighting(Combatant attacker) {
-        if (attacker.getClass().getSuperclass() == Machine.class) {
-            this.takeDamage(((Machine) attacker).getDamage());
-        } else {
-            this.takeDamage(((Human) attacker).getDamage());
-        }
+public class Ranged extends Human implements WeaponCarrier{
+    Weapon weapon;
+    protected Ranged(String name, int age, double health)
+    {
+        super(name, age, health);
+        this.weapon = Weapon.Factory.newRangedWeapon();
     }
 
     @Override
     public String toString() {
-        return "Ranged - Name: " + this.getName() + " Weapon: " + this.getWeapon();
+        final StringBuffer sb = new StringBuffer("Ranged{");
+        sb.append("weapon=").append(weapon);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", age=").append(age);
+        sb.append(", health=").append(health);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    @Override
+    public double getWeaponDamage() {
+        return weapon.getDamage();
+    }
+
+    @Override
+    public Weapon getWeapon() {
+        return weapon;
     }
 }

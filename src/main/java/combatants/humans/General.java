@@ -1,27 +1,28 @@
 package combatants.humans;
 
-import combatants.abstractions.Combatant;
-import combatants.abstractions.Human;
+import java.util.Random;
 
-public class General extends Human {
-    private int experience;
-
-    // function is called every time a combatant is about to be attacked
-    @Override
-    public void isFighting(Combatant attacker) {
-        this.takeDamage(((Human) attacker).getDamage());
+public class General extends Human{
+    int experience;
+    protected General(String name, int age, double health)
+    {
+        super(name, age, health);
+        Random rng = new Random();
+        this.experience = rng.nextInt(1, 101);
     }
 
     public int getExperience() {
         return experience;
     }
 
-    public void setExperience(int experience) {
-        this.experience = experience;
-    }
-
     @Override
     public String toString() {
-        return "Name: " + this.getName() + " HP: " + this.getHealthPoints() + " War knowledge: " + this.getExperience();
+        final StringBuffer sb = new StringBuffer("General{");
+        sb.append("experience=").append(experience);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", age=").append(age);
+        sb.append(", health=").append(health);
+        sb.append('}');
+        return sb.toString();
     }
 }

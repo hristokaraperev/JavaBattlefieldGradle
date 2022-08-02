@@ -5,9 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3156366e-b8ea-4c6e-9e31-fb51d2a24ec0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JavaBattlefieldApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/combatants/humans/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/combatants/humans/WeaponCarrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/combatants/machines/Air.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/combatants/machines/Land.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/combatants/machines/Machine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/globals/GlobalVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/units/Army.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/units/Brigade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/units/Coalition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/units/CoalitionBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/AllArmySoldiersByWeaponType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/AllSoldiersOverSpecificAge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/weapons/Weapon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Battle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factories/WeaponFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/WeaponFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Battle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/combatants/abstractions/Combatant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/combatants/abstractions/Human.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/combatants/abstractions/Machine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/combatants/humans/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/combatants/humans/General.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/combatants/humans/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/combatants/humans/Melee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/combatants/humans/Ranged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/combatants/humans/Ranged.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/combatants/machines/AirMachine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/combatants/machines/LandMachine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/composite/Army.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/composite/Brigade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/composite/Coalition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/composite/abstractions/Unit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factories/CoalitionBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factories/HumanFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factories/MachineFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factories/WeaponFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ArmySoldiersByWeaponType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AverageArmyAge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AverageArmyAge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/HumansAboveAge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/OverallArmyDamage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/OverallArmyDamage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/OverallArmyDurability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/OverallArmyDurability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SortByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SortByName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SortByTypeAndName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SortByTypeAndName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/visitor/BattleLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/weapons/MeleeWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/weapons/MeleeWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/weapons/RangedWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/weapons/RangedWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/weapons/abstractions/Weapon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SoldierNames" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HumanNames" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +91,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="JavaBattlefieldGradle" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="JavaBattlefieldGradle" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="distribution" type="c8890929:TasksNode$1" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -78,22 +116,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\themo\Desktop\GitHub\JavaBattlefieldGradle\src\main\resources" />
       <recent name="C:\Users\themo\Desktop\GitHub\JavaBattlefieldGradle\src\main\java" />
+      <recent name="C:\Users\themo\Desktop\GitHub\JavaBattlefieldGradle\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.JavaBattlefieldGradle [installDist]">
+  <component name="RunManager" selected="Gradle.JavaBattlefieldGradle [clean]">
+    <configuration name="JavaBattlefieldApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaBattlefieldApp" />
+      <module name="JavaBattlefieldGradle.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -115,27 +161,6 @@
         <option name="taskNames">
           <list>
             <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="JavaBattlefieldGradle [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="classes" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.JavaBattlefieldGradle [installDist]" />
         <item itemvalue="Gradle.JavaBattlefieldGradle [clean]" />
+        <item itemvalue="Gradle.JavaBattlefieldGradle [installDist]" />
         <item itemvalue="Gradle.JavaBattlefieldGradle [run]" />
+        <item itemvalue="Application.JavaBattlefieldApp" />
         <item itemvalue="Gradle.JavaBattlefieldGradle [assemble]" />
-        <item itemvalue="Gradle.JavaBattlefieldGradle [classes]" />
       </list>
     </recent_temporary>
   </component>
@@ -242,5 +267,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
